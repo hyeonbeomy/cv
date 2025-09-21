@@ -1,15 +1,90 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-defaultContentLanguage = 'en-us'
-title = 'typo'
+baseURL = "https://YOUR-DOMAIN"   # TODO: 본인 도메인 또는 GitHub Pages 주소
+languageCode = "en-us"
+title = "HyeonBeom Yi"
 
-[module]
-[module.hugoVersion]
-extended = false
-min = "0.116.0"
+# (선택) Google Analytics
+# googleAnalytics = "G-XXXXXXXXXX"
 
-# Default config
-[params.breadcrumbs]
+[taxonomies]
+tag = "tags"
+
+[params]
+# 사이트 전체 메타 설명 (검색/OG 등)
+description = "Researcher in Haptics, XR, and Inclusive Music Interaction. " # TODO: 한 줄 요약
+
+# ====== Appearance (다크/라이트/팔레트) ======
+# auto | light | dark  (auto는 시스템 설정 따라감)
+theme = "auto"                                   # :contentReference[oaicite:4]{index=4}
+colorPalette = "default"                          # default | catpuccin | gruvebox | eink :contentReference[oaicite:5]{index=5}
+hideHeader = false                                # 헤더 숨기기 옵션(전역) :contentReference[oaicite:6]{index=6}
+                                          # 마크다운 지원 :contentReference[oaicite:8]{index=8}
+
+# 홈에 특정 컬렉션(예: posts, projects) 노출하고 싶으면:
+# homeCollectionTitle = "Updates"
+# homeCollection = "posts"                         # :contentReference[oaicite:9]{index=9}
+
+# ====== 컬렉션 리스트 설정 ======
+paginationSize = 100                               # 목록 페이지 최대 개수 :contentReference[oaicite:10]{index=10}
+listSummaries = true                               # 요약 보이기 :contentReference[oaicite:11]{index=11}
+listDateFormat = "2 Jan 2006"                      # 날짜 형식 :contentReference[oaicite:12]{index=12}
+
+# ====== Breadcrumbs(빵부스러기) ======
+[params.breadcrumbs]                               # :contentReference[oaicite:14]{index=14}
 enabled = true
 showCurrentPage = true
 home = "Home"
+
+# ====== 소셜 아이콘(홈 인트로 하단에 아이콘) ======
+# 지원 아이콘 이름 예: github / linkedin / google-scholar / x / bluesky / youtube / instagram ...
+# 누락된 아이콘은 PR 요청 가능.  :contentReference[oaicite:15]{index=15}
+[[params.social]]
+name = "github"
+url = "https://github.com/TODO"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/TODO"
+
+[[params.social]]
+name = "google-scholar"
+url = "https://scholar.google.com/citations?user=TODO"
+
+# ====== 상단 메뉴 ======
+[[params.menu]]
+name = "home"
+url = "/"
+
+# — 상단 메뉴(각 섹션으로 이동) —
+[[params.menu]]
+name = "Publications"
+url = "/publications/"
+
+[[params.menu]]
+name = "Projects"
+url = "/projects/"
+
+# (있으면 좋음) 코드 하이라이트
+[markup]
+  [markup.highlight]
+  style = "algol"
+
+# ====== 댓글 (Giscus, 선택) ======   :contentReference[oaicite:17]{index=17}
+[params.giscus]
+enable = false
+# repo = "user/repo"
+# repoid = "repoId"
+# category = "General"
+# categoryid = "categoryId"
+# mapping = "pathname"
+# theme = "preferred_color_scheme"
+
+# ====== Mermaid (다이어그램, 선택) ======  :contentReference[oaicite:18]{index=18}
+mermaidTheme = "default"
+mermaidDarkTheme = "dark"
+
+# ====== Favicon 커스터마이즈 경로(선택) ======  :contentReference[oaicite:19]{index=19}
+# faviconPath = "img/icons"   # /static/img/icons/* 로 파일 배치
+
+[module]
+[[module.imports]]
+path = "github.com/tomfran/typo"
