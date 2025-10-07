@@ -7,7 +7,8 @@ description: "HyeonBeom Yi — Publications"
 ---
 
 ## 2025
-- Sungyong Shin*, **HyeonBeom Yi***, Junsuk Seo, Chi Yoon Jeong, Chang Hee Lee, Woohun Lee, and Juhan Nam. Haptic Music Feedback through Audio Decomposition. (UIST’25, *Accepted)(*Both authors equally contributed)*
+- [Myung Jin Kim, Mooseop Kim, **HyeonBeom Yi**, and Chi Yoon Jeong. Seeing With Sound in Safe Virtual Environments: A Walk-In-Place VR Training System for Users With Visual Impairment Using the vOICe Algorithm. (VRST'25 Poster, Accepted)](https://dl.acm.org/doi/10.1145/3746058.3758996)
+- Sungyong Shin*, **HyeonBeom Yi***, Junsuk Seo, Chi Yoon Jeong, Chang Hee Lee, Woohun Lee, and Juhan Nam. Haptic Music Feedback through Audio Decomposition. (UIST’25 Demo, *Accepted)(*Both authors equally contributed)*
 - [**HyeonBeom Yi**, Dasom Choi, Soohyeon Yoo, Youngmi Song, Jun Woo Lee, Chi Yoon Jeong, and Sungyong Shin. 2025. Toward More Inclusive Music Experience: Understanding Deaf and Hard-of-hearing Individuals’ Everyday Music Activities. (DIS’25)](https://dl.acm.org/doi/10.1145/3715336.3735757)
 - [Han Shi, Hanzhong Luo, **HyeonBeom Yi**, Seungwoo Je. 2025. “ReachPad: Interacting with Multiple Virtual Screens using a Single Physical Pad through Haptic Retargeting.” In Proceeding of the 2025 CHI Conference on Human Factors in Computing Systems (CHI’25)](https://dl.acm.org/doi/10.1145/3706598.3713629)
 - [Shin, Sungyong, Sunwoo Baek, Sohyun Park, **HyeonBeom Yi**, Hyungcheol Shin, and Woohun Lee. 2025. “Enhancing Pitch Perception and Melodic Reproduction of Hard-of-Hearing Individuals Using a Vibrotactile Glove.” *International Journal of Human–Computer Interaction*, February, 1–18.](https://www.tandfonline.com/doi/full/10.1080/10447318.2025.2452192)
