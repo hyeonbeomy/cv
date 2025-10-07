@@ -1,1 +1,18 @@
 /* Place custom css here */
+.note-box {
+  background: #323232;
+  border-left: 4px solid #4a90e2;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.teal-text {
+  color: #20b2aa; /* 옥색 (LightSeaGreen) */
+}
+
+.publications-links a {
+  text-decoration: none;
+}

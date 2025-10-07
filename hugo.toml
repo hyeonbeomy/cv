@@ -1,6 +1,6 @@
 baseURL = "https://YOUR-DOMAIN"   # TODO: 본인 도메인 또는 GitHub Pages 주소
 languageCode = "en-us"
-title = "HyeonBeom Yi"
+title = "HyeonBeom Yi🧑‍💻"
 
 # (선택) Google Analytics
 # googleAnalytics = "G-XXXXXXXXXX"
@@ -30,7 +30,7 @@ listDateFormat = "2 Jan 2006"                      # 날짜 형식 :contentRefer
 
 # ====== Breadcrumbs(빵부스러기) ======
 [params.breadcrumbs]                               # :contentReference[oaicite:14]{index=14}
-enabled = true
+enabled = false
 showCurrentPage = true
 home = "Home"
 
@@ -59,14 +59,14 @@ url = "/"
 name = "Publications"
 url = "/publications/"
 
-[[params.menu]]
-name = "Projects"
-url = "/projects/"
 
 # (있으면 좋음) 코드 하이라이트
 [markup]
   [markup.highlight]
   style = "algol"
+  [markup.goldmark.renderer]
+    hardWraps = true   # 한 줄 개행을 <br>로 렌더
+    unsafe = true      # (선택) raw HTML(<br> 등) 허용
 
 # ====== 댓글 (Giscus, 선택) ======   :contentReference[oaicite:17]{index=17}
 [params.giscus]

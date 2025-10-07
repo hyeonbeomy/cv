@@ -1,57 +1,51 @@
----
-title: "Curriculum Vitae"
-# 페이지별 설정
-toc: true            # 목차
-autonumber: true     # 헤딩 자동 번호 (h2부터 권장)  # :contentReference[oaicite:22]{index=22}
-readTime: false
-description: "HyeonBeom Yi — CV"
-# (필요 시) tags: ["haptics", "XR", "accessibility"]
----
 
-## Profile
-**Name**: HyeonBeom Yi  
-**Affiliation**: Sense Expansion Lab (감각확장연구실)  
-**Email**: <TODO@email>  
-**Website**: https://TODO  
-**Location**: Seoul, Korea
+## Ph.D. Researcher at ETRI <br> (Electronics and Telecommunications Research Institute)
+<div class="note-box">
+I am a Human–Computer Interaction (HCI) researcher in Team EnSeption (Enhancing Sensory and Perception Technology) at ETRI.
+My work focuses on designing ways to bridge the digital and physical worlds to enhance human perception.
+Grounded in UX-analytic methods, I design and develop HCI techniques for diverse user groups.
+</div>
 
-Brief
-: Researcher in **HCI/Haptics/XR** focusing on inclusive music experiences and tactile interaction.  
-  <!-- TODO: 노션의 한 줄 요약 붙여넣기 -->
+## 🎓 Educational Background
+- **Ph.D. in Human-Computer Interaction** <br> Department of Industrial Design, KAIST, 2018.02–2023.02  
+- **M.S. in Human-Computer Interaction** <br> Department of Industrial Design, KAIST, 2016.03–2018.02 
+- **B.S. in Industrial Design** <br> Department of Industrial Design, KAIST, 2012.02–2016.02 
 
 ## Research Interests
-- Haptics for audio/music & accessibility  
-- XR interaction / non-visual feedback design  
-- Speech/timbre-driven tactile rendering (TacHammer, etc.)  
+- Haptics for XR and music experience
+- Designing XR interaction
+- Embodied interaction for human augmentation
+- Understanding UX for designing emerging-technology
 <!-- TODO: 노션 기반으로 수정 -->
 
-## Education
-- **Ph.D./M.S./B.S. in TODO**, University/KAIST, YYYY–YYYY  
-  - Thesis: “TODO”  
-- **B.S. in TODO**, University, YYYY–YYYY
-<!-- TODO: 실제 이력 채우기 -->
-
 ## Experience
-- **Role**, **Institution/Company**, YYYY–Present  
-  - Focus: TODO
-- **Role**, **Institution/Company**, YYYY–YYYY  
-  - Focus: TODO
+- **Researcher at Electronics and Telecommunications Research Institute (ETRI)**, 2024.07–Present  
+  - Sensory Augmentation, Music Experience for Deaf and hard-of-hearing
+- **Post-doc Researcher at Electronics and Telecommunications Research Institute (ETRI)**, 2023.09-2024.06
+- **Post-doc Researcher at Department of Industrial Design, KAIST**, 2023.03-2023.08
 
-## Awards & Grants
-- TODO (Name of award/grant), Organization, YYYY
+## Awards
+- **iF Design Award 2023**
+*”WonderScope: XR Device for Museum Visiting”*
+- **KAIST College of Engineering Ph.D. Dissertation Award 2023**
+*”Designing Near-surface AR Interaction for Enhancing Museum Visitor Experience”*
+- **ACM SIGGRAPH 2022 Honorable Mention Award**
+*”WonderScope: Practical Near-surface AR Device for Museum Exhibits”*
+- **ACM DIS 2020 Honorable Mention Award**
+*”SoundWear: Effect of Non-speech Sound Augmentation on the Outdoor Play Experience of Children”*
+- **ACM SIGCHI 2018 Honorable Mention Award**
+*”HapCube: A Wearable Tactile Device to Provide Tangential and Normal Pseudo-Force Feedback on a Fingertip”*
 
-## Teaching & Service
-- Reviewer: CHI / DIS / UIST (예시)  
-- TA / Guest Lecture: Course, Univ., YYYY
-
-## Skills
-- **Hardware/Actuators**: TacHammer, LRA/ERM  
-- **Software**: Python, Unity(C#), ESP32, BLE, Hugo  
-- **ML/Signal**: Audio DSP, Speaker embedding, ONNX/CREPE
-
+## Reviewer
+- SIGGRAPH Asia 2025 Emerging Technology
+- DIS 2025
+- CHI 2025 (Design Subcommittee)
+- DIS 2024
+- CHI 2024 LBW
+- Digital Creativity (Taylor & Francis) 2023
+- CHI PLAY 2021 WIP
 
 ## Contact
-- Email: <TODO@email>  
-- GitHub: https://github.com/TODO  
-- LinkedIn: https://www.linkedin.com/in/TODO  
-- Google Scholar: https://scholar.google.com/citations?user=TODO
+- Email: <ihb0523@gmail.com> 
+- LinkedIn: https://www.linkedin.com/in/hyeonbeom-yi-2633b8231/
+- Google Scholar: https://scholar.google.com/citations?hl=ko&user=fV53uIUAAAAJ
