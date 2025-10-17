@@ -1,5 +1,5 @@
 
-## Ph.D. Researcher at ETRI <br> (Electronics and Telecommunications Research Institute)
+## Researcher at ETRI <br> (Electronics and Telecommunications Research Institute)
 <div class="note-box">
 I am a Human–Computer Interaction (HCI) researcher in Team EnSeption (Enhancing Sensory and Perception Technology) at ETRI.
 My work focuses on designing ways to bridge the digital and physical worlds to enhance human perception.
