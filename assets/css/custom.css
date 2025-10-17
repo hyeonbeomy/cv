@@ -16,3 +16,16 @@
 .publications-links a {
   text-decoration: none;
 }
+
+strong, b, .highlight, mark {
+  color: #0ea5a4 !important; /* 원하는 색으로 변경 */
+  background: transparent;
+}
+
+.teal-highlight {
+  color: #ffcc02;           /* 옥색 텍스트 */
+  background: transparent; /* 연한 배경(선택) */
+  padding: 0.08em 0.18em;
+  border-radius: 0.22em;
+  text-decoration: none;
+}

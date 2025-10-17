@@ -14,7 +14,7 @@ description = "Researcher in Haptics, XR, and Inclusive Music Interaction. " # T
 
 # ====== Appearance (다크/라이트/팔레트) ======
 # auto | light | dark  (auto는 시스템 설정 따라감)
-theme = "auto"                                   # :contentReference[oaicite:4]{index=4}
+theme = "dark"                                   # :contentReference[oaicite:4]{index=4}
 colorPalette = "default"                          # default | catpuccin | gruvebox | eink :contentReference[oaicite:5]{index=5}
 hideHeader = false                                # 헤더 숨기기 옵션(전역) :contentReference[oaicite:6]{index=6}
                                           # 마크다운 지원 :contentReference[oaicite:8]{index=8}
