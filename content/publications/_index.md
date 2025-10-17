@@ -10,7 +10,7 @@ description: "HyeonBeom Yi — Publications"
 - Myung Jin Kim, Mooseop Kim, **HyeonBeom Yi**, and Chi Yoon Jeong. <span class = "teal-highlight">Seeing With Sound in Safe Virtual Environments: A Walk-In-Place VR Training System for Users With Visual Impairment Using the vOICe Algorithm.</span> (VRST'25 Poster, Accepted)
 - [Sungyong Shin*, **HyeonBeom Yi***, Junsuk Seo, Chi Yoon Jeong, Chang Hee Lee, Woohun Lee, and Juhan Nam.  <span class = "teal-highlight">Haptic Music Feedback through Audio Decomposition.</span> (UIST’25 Demo)(*Both authors equally contributed)*](https://dl.acm.org/doi/10.1145/3746058.3758996)
 - [**HyeonBeom Yi**, Dasom Choi, Soohyeon Yoo, Youngmi Song, Jun Woo Lee, Chi Yoon Jeong, and Sungyong Shin.  <span class = "teal-highlight"> Toward More Inclusive Music Experience: Understanding Deaf and Hard-of-hearing Individuals’ Everyday Music Activities.</span> (DIS’25)](https://dl.acm.org/doi/10.1145/3715336.3735757)
-- [Han Shi, Hanzhong Luo, **HyeonBeom Yi**, Seungwoo Je. 2025. “ReachPad: Interacting with Multiple Virtual Screens using a Single Physical Pad through Haptic Retargeting.” In Proceeding of the 2025 CHI Conference on Human Factors in Computing Systems (CHI’25)](https://dl.acm.org/doi/10.1145/3706598.3713629)
+- [Han Shi, Hanzhong Luo, **HyeonBeom Yi**, Seungwoo Je. 2025. <span class = "teal-highlight"> ReachPad: Interacting with Multiple Virtual Screens using a Single Physical Pad through Haptic Retargeting.</span> In Proceeding of the 2025 CHI Conference on Human Factors in Computing Systems (CHI’25)](https://dl.acm.org/doi/10.1145/3706598.3713629)
 - [Shin, Sungyong, Sunwoo Baek, Sohyun Park, **HyeonBeom Yi**, Hyungcheol Shin, and Woohun Lee. <span class = "teal-highlight"> Enhancing Pitch Perception and Melodic Reproduction of Hard-of-Hearing Individuals Using a Vibrotactile Glove.</span> *International Journal of Human–Computer Interaction*, February, 1–18.](https://www.tandfonline.com/doi/full/10.1080/10447318.2025.2452192)
 
 ## 2024
@@ -21,7 +21,7 @@ description: "HyeonBeom Yi — Publications"
 - Sungwoo Kang, Buyoung Mun, **HyeonBeom Yi**, Geehyuk Lee, Jaeyeon Lee. 2023. <span class = "teal-highlight"> Investigating the feasibility of force input using hand flexion and extension. </span> (Korea Haptics Conference)
 
 ## 2022
-- [**HyeonBeom Yi**, Yeeun Shin, Sehee Lee, Eunhye Youn, Auejin Ham, Geehyuk Lee, and Woohun Lee. <span class = "teal-highlight"> WonderScope: Practical Near-surface AR Device for Museum Exhibits.<\span> In ACM SIGGRAPH 2022 Emerging Technologies (SIGGRAPH '22)](https://dl.acm.org/doi/10.1145/3532721.3535564) *(Honorable Mention Awarded)*
+- [**HyeonBeom Yi**, Yeeun Shin, Sehee Lee, Eunhye Youn, Auejin Ham, Geehyuk Lee, and Woohun Lee. <span class = "teal-highlight"> WonderScope: Practical Near-surface AR Device for Museum Exhibits.</span> In ACM SIGGRAPH 2022 Emerging Technologies (SIGGRAPH '22)](https://dl.acm.org/doi/10.1145/3532721.3535564) *(Honorable Mention Awarded)*
 - [**HyeonBeom Yi**, Seung Hyeon Han, Min Kyoung Park & Woohun Lee. <span class = "teal-highlight"> SurfaceLens: near-surface spatial interaction with science museum exhibits.</span> Digital Creativity 33:1](https://www.tandfonline.com/doi/full/10.1080/14626268.2022.2039208)
 
 ## 2020
