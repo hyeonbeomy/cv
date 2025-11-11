@@ -2,7 +2,8 @@
 <!-- Profile block: image left, researcher blurb right -->
 <div class="profile-row">
   <div class="image-col">
-    <img src="cv/static/images/me.jpeg" alt="Hyeonbeom Yi — Researcher at ETRI" width="160" height="160" class="profile-img" loading="lazy">
+  <!-- Use site-root path for files in `static/` -> static/images/me.jpeg maps to /images/me.jpeg -->
+  <img src="/images/me.jpeg" alt="Hyeonbeom Yi — Researcher at ETRI" width="160" height="160" class="profile-img" loading="lazy">
   </div>
   <div class="content-col">
     <h2>Researcher at ETRI</h2>
