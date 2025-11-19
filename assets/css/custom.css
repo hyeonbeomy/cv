@@ -41,6 +41,66 @@ strong, b, .highlight, mark {
   .content-col { width: 100%; }
 }
 
+/* News sidebar styles */
+.news-box {
+  /* sticky box positioned to the left outside the centered main column on wide screens */
+  /* vertical shift variable: can be adjusted to move the box down on desktop */
+  --news-vertical-shift: 0px;
+  position: sticky;
+  top: calc(1.6rem + var(--news-vertical-shift));
+  width: 260px;
+  /* make the box taller and add more vertical breathing room */
+  min-height: 320px;
+  padding: 1.25rem 0.5rem; /* reduce left/right padding, increase vertical padding */
+  /* slightly reduce type size for news contents to make the box look denser */
+  font-size: 0.88rem;
+  border-radius: 8px;
+  background: var(--background); /* follow site color theme */
+  color: var(--content-primary);
+  transition: max-height 0.28s ease, padding 0.18s ease;
+  border: 1px solid var(--code-border);
+  box-shadow: var(--box-shadow, 0 6px 18px rgba(0,0,0,0.04));
+  z-index: 10;
+}
+.news-box h3 { margin-top: 0; }
+.news-box ul { list-style: none; padding-left: 0.15rem; margin: 0; margin-left: 0; }
+.news-box li { margin-bottom: 0.5rem; font-size: inherit; padding-left: 0; margin-left: 0; }
+.news-box { display: flex; flex-direction: column; }
+.news-box .news-content { transition: max-height 0.28s ease; }
+.news-box .news-toggle { display:block; width:100%; text-align:left; background: transparent; border: none; color: var(--content-primary); padding: 0.5rem 0; cursor: pointer; font-weight: 600; }
+.news-box.collapsed .news-content { max-height: var(--truncate-height, 360px); overflow: hidden; }
+.news-box.expanded .news-content { max-height: 2000px; }
+.news-box .news-more { margin-top: 0.5rem; }
+
+/* On large screens, position the box to the left outside the centered column */
+@media (min-width: 1025px) {
+  .news-box {
+    /* place the box to the left outside the centered column and align near the profile image */
+    --image-col-width: 160px; /* matches .image-col width */
+    /* extra left shift; user requested ~100px more to the left */
+    --news-shift: 112px; /* 12px previous + 100px requested */
+    /* move the box down ~100px on large screens */
+    --news-vertical-shift: 100px;
+    /* distance from the main column edge to the left; subtract image width + extra shift to sit left of the photo */
+    left: calc((100vw - var(--main-width)) / 2 - var(--image-col-width) - var(--news-shift));
+    position: fixed; /* fixed so it stays put while scrolling */
+    /* keep the box mostly visible (no hover reveal) and slightly outside the column */
+    transform: none;
+    transition: none;
+    padding-right: 1rem;
+    top: calc(1.6rem + var(--news-vertical-shift));
+  }
+}
+
+@media (max-width: 1024px) {
+  .news-box { position: static; width: auto; margin: 1rem 0; left: auto; }
+}
+
+/* Hide the news box entirely on small viewports (mobile). Adjust threshold as needed */
+@media (max-width: 900px) {
+  .news-box { display: none !important; }
+}
+
 /* Heading and subtitle styling for profile block */
 .content-col h2 { margin: 0; font-size: 1.5em; }
 .content-col .subtitle { margin-top: 0.25rem; margin-bottom: 0.5rem; color: var(--content-secondary); }

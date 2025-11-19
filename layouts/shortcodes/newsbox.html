@@ -1,0 +1,91 @@
+<!-- Shortcode: newsbox -->
+<aside class="news-box" aria-label="Latest news" data-truncate-height="360">
+  <h3>News</h3>
+  <div class="news-content">
+    <ul>
+      <li><strong>2025.09.28~</strong> Attended UIST 2025 in Busan and demoed a new music–haptics feedback system powered by an Audio Decomposition Model! 🎧✨</li>
+      <li><strong>2025.08.27</strong> Selected for the ETRI Early-Career Researcher Program and began a new human-body–augmentation project as Project Investigator! 🧠🔧</li>
+      <li><strong>2025.07.05~09</strong> Presented a new paper at DIS 2025 in Madeira — pushing toward more inclusive music experiences! 🎵🌍</li>
+      <li><strong>2025.06.05</strong> Demonstrated a system that decomposes instrument stems and delivers them as haptic feedback at the 2025 ETRI Conference.</li>
+      <li><strong>2024.10.13~16</strong> Joined UIST 2024 in Pittsburgh and came back full of new inspiration! 💡</li>
+      <li><strong>2024.07.01</strong> Started a new chapter as a Researcher in ETRI’s Enhancing Sensory & Perception Technology Section! 🚀</li>
+      <li><strong>2024.06.26~27</strong> Presented haptic technologies for improving music experiences for DHH individuals at the ETRI Conference.</li>
+      <li><strong>2023.11.12~15</strong> Attended SIGGRAPH Asia 2023 and gained lots of insight and motivation from cutting-edge research. ✨</li>
+      <li><strong>2023.09.01</strong> Began a new journey as a Post-doc Researcher at ETRI.</li>
+      <li><strong>2023.02.17</strong> Completed my Ph.D. and officially started my post-doctoral research journey! 🎓🔥</li>
+    </ul>
+  </div>
+  <button class="news-toggle" type="button" aria-expanded="false">Show more</button>
+</aside>
+<script>
+(function(){
+  var script = document.currentScript;
+  if(!script) return;
+  var aside = script.previousElementSibling;
+  if(!aside || !aside.classList.contains('news-box')) return;
+  var content = aside.querySelector('.news-content');
+  var list = content && content.querySelector('ul');
+  var btn = aside.querySelector('.news-toggle');
+  var truncateH = parseInt(aside.getAttribute('data-truncate-height') || 360, 10);
+
+  // Fallback: if required elements are missing, hide toggle
+  if(!content || !list || !btn) {
+    if(btn) btn.style.display = 'none';
+    return;
+  }
+
+  // Compute a truncate height that ends at a whole <li> boundary.
+  // Sum item heights (including margins) until adding the next would exceed truncateH.
+  var items = Array.prototype.slice.call(list.children);
+  var cum = 0;
+  var fitHeight = 0;
+  for(var i=0;i<items.length;i++){
+    var li = items[i];
+    var rect = li.getBoundingClientRect();
+    // offsetHeight doesn't include margins, so add computed margins
+    var h = li.offsetHeight;
+    var cs = window.getComputedStyle(li);
+    var mt = parseFloat(cs.marginTop) || 0;
+    var mb = parseFloat(cs.marginBottom) || 0;
+    var total = h + mt + mb;
+    if(cum + total > truncateH) break;
+    cum += total;
+    fitHeight = cum;
+  }
+
+  // If no whole item fits, show at least the first item fully
+  if(fitHeight === 0 && items.length>0){
+    var first = items[0];
+    var csf = window.getComputedStyle(first);
+    fitHeight = first.offsetHeight + (parseFloat(csf.marginTop)||0) + (parseFloat(csf.marginBottom)||0);
+  }
+
+  // Use the computed fitHeight (or fallback to truncateH)
+  var applied = Math.max(1, fitHeight || truncateH);
+  aside.style.setProperty('--truncate-height', Math.round(applied) + 'px');
+
+  // If content is short enough, hide the toggle
+  var fullH = content.scrollHeight;
+  if(fullH <= applied + 8){
+    btn.style.display = 'none';
+    return;
+  }
+
+  // start collapsed
+  aside.classList.add('collapsed');
+
+  btn.addEventListener('click', function(){
+    var isExpanded = aside.classList.toggle('expanded');
+    if(isExpanded){
+      aside.classList.remove('collapsed');
+      btn.textContent = 'Show less';
+      btn.setAttribute('aria-expanded','true');
+    } else {
+      aside.classList.add('collapsed');
+      btn.textContent = 'Show more';
+      btn.setAttribute('aria-expanded','false');
+      aside.scrollIntoView({behavior:'smooth', block:'nearest'});
+    }
+  });
+})();
+</script>

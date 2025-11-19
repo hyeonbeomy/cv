@@ -17,7 +17,10 @@
   </div>
 </div>
 
-## 🎓 Educational Background
+  <!-- News sidebar: moved to shortcode -->
+  {{< newsbox >}}
+
+  ## 🎓 Educational Background
 - **Ph.D. in Human-Computer Interaction**  
   Department of Industrial Design, KAIST, 2018.02–2023.02
 - **M.S. in Human-Computer Interaction**  
