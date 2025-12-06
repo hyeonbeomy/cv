@@ -7,7 +7,7 @@ description: "HyeonBeom Yi — Publications"
 ---
 
 ## 2025
-- Myung Jin Kim, Mooseop Kim, **HyeonBeom Yi**, and Chi Yoon Jeong. <span class = "teal-highlight">Seeing With Sound in Safe Virtual Environments: A Walk-In-Place VR Training System for Users With Visual Impairment Using the vOICe Algorithm.</span> (VRST'25 Poster, Accepted)
+- [Myung Jin Kim, Mooseop Kim, **HyeonBeom Yi**, and Chi Yoon Jeong. <span class = "teal-highlight">Seeing With Sound in Safe Virtual Environments: A Walk-In-Place VR Training System for Users With Visual Impairment Using the vOICe Algorithm.</span> (VRST'25 Poster)](https://dl.acm.org/doi/10.1145/3756884.3770536)
 - [Sungyong Shin*, **HyeonBeom Yi***, Junsuk Seo, Chi Yoon Jeong, Chang Hee Lee, Woohun Lee, and Juhan Nam.  <span class = "teal-highlight">Haptic Music Feedback through Audio Decomposition.</span> (UIST’25 Demo)(*Both authors equally contributed)*](https://dl.acm.org/doi/10.1145/3746058.3758996)
 - [**HyeonBeom Yi**, Dasom Choi, Soohyeon Yoo, Youngmi Song, Jun Woo Lee, Chi Yoon Jeong, and Sungyong Shin.  <span class = "teal-highlight"> Toward More Inclusive Music Experience: Understanding Deaf and Hard-of-hearing Individuals’ Everyday Music Activities.</span> (DIS’25)](https://dl.acm.org/doi/10.1145/3715336.3735757)
 - [Han Shi, Hanzhong Luo, **HyeonBeom Yi**, Seungwoo Je. 2025. <span class = "teal-highlight"> ReachPad: Interacting with Multiple Virtual Screens using a Single Physical Pad through Haptic Retargeting.</span> In Proceeding of the 2025 CHI Conference on Human Factors in Computing Systems (CHI’25)](https://dl.acm.org/doi/10.1145/3706598.3713629)
