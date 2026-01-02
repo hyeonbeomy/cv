@@ -5,6 +5,9 @@ readTime: false
 description: "HyeonBeom Yi — Publications"
 # (필요 시) tags: ["haptics", "XR", "accessibility"]
 ---
+## 2026
+
+- [**HyeonBeom Yi**, Myung Jin (MJ) Kim, Seungwoo Je, Seungjae Oh, Shuto Takashita, Hongyu Zhou, Marie Muehlhaus, Eyal Ofek, and Andrea Bianchi. <span class = "teal-highlight">Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics.</span> (CHI EA ’26)](https://sites.google.com/view/augmented-body-parts/)
 
 ## 2025
 - [Myung Jin Kim, Mooseop Kim, **HyeonBeom Yi**, and Chi Yoon Jeong. <span class = "teal-highlight">Seeing With Sound in Safe Virtual Environments: A Walk-In-Place VR Training System for Users With Visual Impairment Using the vOICe Algorithm.</span> (VRST'25 Poster)](https://dl.acm.org/doi/10.1145/3756884.3770536)
