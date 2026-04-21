@@ -1,24 +1,32 @@
 
-<!-- Profile block: image left, researcher blurb right -->
-<div class="profile-row">
-  <div class="image-col">
-  <!-- Use site-root path for files in `static/` -> static/images/me.jpeg maps to /images/me.jpeg -->
-  <!-- Use site-relative path for files in `static/` when deployed under a repository subpath (e.g. /cv/) -->
-  <img src="images/me.jpeg" alt="Hyeonbeom Yi — Researcher at ETRI" width="160" height="160" class="profile-img" loading="lazy">
-  </div>
-  <div class="content-col">
-    <h2>Researcher at ETRI</h2>
-    <p class="subtitle">(Electronics and Telecommunications Research Institute)</p>
+<div class="home-top-grid">
+  <section class="profile-card" aria-label="Profile introduction">
+    <div class="profile-row">
+      <div class="image-col">
+      <!-- Use site-root path for files in `static/` -> static/images/me.jpeg maps to /images/me.jpeg -->
+      <!-- Use site-relative path for files in `static/` when deployed under a repository subpath (e.g. /cv/) -->
+      <img src="images/me.jpeg" alt="Hyeonbeom Yi — Researcher at ETRI" width="180" height="180" class="profile-img" loading="eager">
+      </div>
+      <div class="content-col">
+        <p class="profile-kicker">🧠 HCI Researcher</p>
+        <h2>Researcher at ETRI</h2>
+        <p class="subtitle">Electronics and Telecommunications Research Institute</p>
+        <div class="profile-tags" aria-label="Research themes">
+          <span class="profile-tag">Haptics</span>
+          <span class="profile-tag">XR Interaction</span>
+          <span class="profile-tag">Human Augmentation</span>
+        </div>
+      </div>
+    </div>
     <div class="note-box">
-      I am a Human–Computer Interaction (HCI) researcher in Team EnSeption (Enhancing Sensory and Perception Technology) at ETRI.
+      I am a Human–Computer Interaction (HCI) researcher in <a href="https://enseptionteam.github.io/" target="_blank" rel="noopener noreferrer">Team EnSeption</a> (Enhancing Sensory and Perception Technology) at ETRI.
       My work focuses on designing ways to bridge the digital and physical worlds to enhance human perception.
       Grounded in UX-analytic methods, I design and develop HCI techniques for diverse user groups.
     </div>
-  </div>
-</div>
+  </section>
 
-  <!-- News sidebar: moved to shortcode -->
   {{< newsbox >}}
+</div>
 
   ## 🎓 Educational Background
 - **Ph.D. in Human-Computer Interaction**  
@@ -42,7 +50,7 @@
 - **Post-doc Researcher at Department of Industrial Design, KAIST**, 2023.03–2023.08
 
 ## Awards
-- **iF Design Award 2023**
+- [**iF Design Award 2023**](https://ifdesign.com/en/winner-ranking/project/wonderscope/549128)
   - "WonderScope: XR Device for Museum Visiting"
 - **KAIST College of Engineering Ph.D. Dissertation Award 2023**
   - "Designing Near-surface AR Interaction for Enhancing Museum Visitor Experience"

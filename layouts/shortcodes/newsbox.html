@@ -1,9 +1,13 @@
 <!-- Shortcode: newsbox -->
 <aside class="news-box" aria-label="Latest news" data-truncate-height="360">
-  <h3>News</h3>
+  <div class="news-box-header">
+    <p class="news-meta">🗞️ Recent Updates</p>
+    <h3>News</h3>
+  </div>
   <div class="news-content">
     <ul>
-      <li><strong>~2025.02.12</strong> Recruiting participants for the <a href = "https://sites.google.com/view/augmented-body-parts/">CHI 2026 workshop <span class = "teal-highlight" href="https://sites.google.com/view/augmented-body-parts/" target="_blank" rel="noopener">Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics</span> (embodied interaction, augmented bodies, human body augmentation).</a></li>
+      <li><strong>2026.04.12~19</strong> Had a great time at CHI 2026 and came back with fresh ideas and inspiring conversations! ✨</li>
+      <li><strong>~2025.02.12</strong> Recruiting participants for the <a href="https://sites.google.com/view/augmented-body-parts/" target="_blank" rel="noopener noreferrer">CHI 2026 workshop <span class="teal-highlight">Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics</span> (embodied interaction, augmented bodies, human body augmentation).</a></li>
       <li><strong>2025.11.27~29</strong> Visited SUSTech and engaged with passionate researchers at the School of Design, sharing ideas and presenting my new project! ✨</li>
       <li><strong>2025.10.29</strong> Introduced qualitative research methodologies for HCI at UNIST’s Department of Computer Science. Thanks for the invitation!</li>
       <li><strong>2025.09.28~</strong> Attended UIST 2025 in Busan and demoed a new music–haptics feedback system powered by an Audio Decomposition Model! 🎧✨</li>
@@ -18,7 +22,7 @@
       <li><strong>2023.02.17</strong> Completed my Ph.D. and officially started my post-doctoral research journey! 🎓🔥</li>
     </ul>
   </div>
-  <button class="news-toggle" type="button" aria-expanded="false">Show more</button>
+  <button class="news-toggle" type="button" aria-expanded="false">Show more ↴</button>
 </aside>
 <script>
 (function(){
@@ -81,11 +85,11 @@
     var isExpanded = aside.classList.toggle('expanded');
     if(isExpanded){
       aside.classList.remove('collapsed');
-      btn.textContent = 'Show less';
+      btn.textContent = 'Show less ↑';
       btn.setAttribute('aria-expanded','true');
     } else {
       aside.classList.add('collapsed');
-      btn.textContent = 'Show more';
+      btn.textContent = 'Show more ↴';
       btn.setAttribute('aria-expanded','false');
       aside.scrollIntoView({behavior:'smooth', block:'nearest'});
     }
