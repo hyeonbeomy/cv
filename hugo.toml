@@ -54,6 +54,10 @@ url = "https://scholar.google.com/citations?user=fV53uIUAAAAJ&hl=ko"
 name = "home"
 url = "/cv/"
 
+[[params.menu]]
+name = "Projects"
+url = "/cv/projects/"
+
 # — 상단 메뉴(각 섹션으로 이동) —
 [[params.menu]]
 name = "Publications"

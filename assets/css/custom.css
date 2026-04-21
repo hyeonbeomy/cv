@@ -104,3 +104,149 @@ strong, b, .highlight, mark {
 /* Heading and subtitle styling for profile block */
 .content-col h2 { margin: 0; font-size: 1.5em; }
 .content-col .subtitle { margin-top: 0.25rem; margin-bottom: 0.5rem; color: var(--content-secondary); }
+
+/* Projects page */
+.projects-intro {
+  max-width: 44rem;
+  color: var(--content-secondary);
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--code-border);
+  border-radius: 18px;
+  background: var(--code-background);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+.project-card.with-media {
+  min-height: 17.5rem;
+  background: #111;
+}
+
+.project-card.with-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(120deg, rgba(7, 7, 7, 0.88) 0%, rgba(10, 10, 10, 0.78) 42%, rgba(10, 10, 10, 0.64) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.48) 100%);
+  pointer-events: none;
+}
+
+.project-copy {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+  max-width: 42rem;
+}
+
+.project-figure {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 0;
+  border-radius: inherit;
+  background: #111;
+}
+
+.project-figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.42;
+  transform: scale(1.03);
+  filter: brightness(1.03) saturate(0.98) contrast(1.04);
+}
+
+.project-card h2 {
+  margin-top: 0.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-card p {
+  margin-top: 0.45rem;
+  margin-bottom: 0.45rem;
+}
+
+.project-meta {
+  margin: 0;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--content-secondary);
+}
+
+.project-role {
+  display: inline-block;
+  margin-top: 0.15rem;
+  margin-bottom: 0.5rem;
+  padding: 0.22rem 0.6rem;
+  border: 1px solid rgba(255, 204, 2, 0.28);
+  border-radius: 999px;
+  color: #ffcc02;
+  background: rgba(255, 204, 2, 0.08);
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+}
+
+.project-card.with-media .project-meta,
+.project-card.with-media .project-note {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.project-note {
+  color: var(--content-secondary);
+  font-style: italic;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.32rem 0.7rem;
+  border: 1px solid var(--code-border);
+  border-radius: 999px;
+  color: var(--content-primary);
+  font-size: 0.86rem;
+}
+
+.project-card.with-media .project-role,
+.project-card.with-media .project-links a {
+  background: rgba(8, 8, 8, 0.48);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.project-links a:hover {
+  border-color: #ffcc02;
+  color: #ffcc02;
+}
+
+@media (max-width: 720px) {
+  .project-card.with-media {
+    min-height: 16rem;
+  }
+}
