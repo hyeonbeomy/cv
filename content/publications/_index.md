@@ -9,7 +9,7 @@ description: "HyeonBeom Yi — Publications"
 
 - Sungyong Shin*, **HyeonBeom Yi***, Dasom Choi, Yoonji Lee, Chi Yoon Jeong, Changhee Lee, and Woohun Lee.  <span class = "teal-highlight"> Co-designing Haptics for Deaf and Hard-of-Hearing Music Education with a Reconfigurable Prototyping System </span> (DIS’26, Conditionally Accepted, *Both authors equally contributed)
 
-- [**HyeonBeom Yi**, Myung Jin (MJ) Kim, Seungwoo Je, Seungjae Oh, Shuto Takashita, Hongyu Zhou, Marie Muehlhaus, Eyal Ofek, and Andrea Bianchi. <span class = "teal-highlight">Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics.</span> (CHI EA ’26)](https://sites.google.com/view/augmented-body-parts/)
+- [**HyeonBeom Yi**, Myung Jin (MJ) Kim, Seungwoo Je, Seungjae Oh, Shuto Takashita, Hongyu Zhou, Marie Muehlhaus, Eyal Ofek, and Andrea Bianchi. <span class = "teal-highlight">Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics.</span> (CHI EA ’26)](https://dl.acm.org/doi/10.1145/3772363.3778688) [Workshop Homepage Link](https://sites.google.com/view/augmented-body-parts/)
 
 ## 2025
 - [Myung Jin Kim, Mooseop Kim, **HyeonBeom Yi**, and Chi Yoon Jeong. <span class = "teal-highlight">Seeing With Sound in Safe Virtual Environments: A Walk-In-Place VR Training System for Users With Visual Impairment Using the vOICe Algorithm.</span> (VRST'25 Poster)](https://dl.acm.org/doi/10.1145/3756884.3770536)
