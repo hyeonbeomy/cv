@@ -54,7 +54,7 @@
   - "WonderScope: XR Device for Museum Visiting"
 - **KAIST College of Engineering Ph.D. Dissertation Award 2023**
   - "Designing Near-surface AR Interaction for Enhancing Museum Visitor Experience"
-- **ACM SIGGRAPH 2022 Honorable Mention Award**
+- [**ACM SIGGRAPH 2022 Honorable Mention Award**](https://s2022.siggraph.org/program/emerging-technologies/)
   - "WonderScope: Practical Near-surface AR Device for Museum Exhibits"
 - **ACM DIS 2020 Honorable Mention Award**
   - "SoundWear: Effect of Non-speech Sound Augmentation on the Outdoor Play Experience of Children"

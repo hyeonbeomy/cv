@@ -26,7 +26,7 @@ description: "HyeonBeom Yi — Publications"
 - Sungwoo Kang, Buyoung Mun, **HyeonBeom Yi**, Geehyuk Lee, Jaeyeon Lee. 2023. <span class = "teal-highlight"> Investigating the feasibility of force input using hand flexion and extension. </span> (Korea Haptics Conference)
 
 ## 2022
-- [**HyeonBeom Yi**, Yeeun Shin, Sehee Lee, Eunhye Youn, Auejin Ham, Geehyuk Lee, and Woohun Lee. <span class = "teal-highlight"> WonderScope: Practical Near-surface AR Device for Museum Exhibits.</span> In ACM SIGGRAPH 2022 Emerging Technologies (SIGGRAPH '22)](https://dl.acm.org/doi/10.1145/3532721.3535564) *(Honorable Mention Awarded)*
+- [**HyeonBeom Yi**, Yeeun Shin, Sehee Lee, Eunhye Youn, Auejin Ham, Geehyuk Lee, and Woohun Lee. <span class = "teal-highlight"> WonderScope: Practical Near-surface AR Device for Museum Exhibits.</span> In ACM SIGGRAPH 2022 Emerging Technologies (SIGGRAPH '22)](https://dl.acm.org/doi/10.1145/3532721.3535564) [*(Honorable Mention Awarded)*](https://s2022.siggraph.org/program/emerging-technologies/)
 - [**HyeonBeom Yi**, Seung Hyeon Han, Min Kyoung Park & Woohun Lee. <span class = "teal-highlight"> SurfaceLens: near-surface spatial interaction with science museum exhibits.</span> Digital Creativity 33:1](https://www.tandfonline.com/doi/full/10.1080/14626268.2022.2039208)
 
 ## 2020
