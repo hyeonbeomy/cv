@@ -52,16 +52,16 @@ url = "https://scholar.google.com/citations?user=fV53uIUAAAAJ&hl=ko"
 # ====== 상단 메뉴 ======
 [[params.menu]]
 name = "home"
-url = "/cv/"
+url = "/"
 
 [[params.menu]]
 name = "Projects"
-url = "/cv/projects/"
+url = "/projects/"
 
 # — 상단 메뉴(각 섹션으로 이동) —
 [[params.menu]]
 name = "Publications"
-url = "/cv/publications/"
+url = "/publications/"
 
 
 # (있으면 좋음) 코드 하이라이트
