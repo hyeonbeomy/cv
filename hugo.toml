@@ -50,18 +50,22 @@ name = "google-scholar"
 url = "https://scholar.google.com/citations?user=fV53uIUAAAAJ&hl=ko"
 
 # ====== 상단 메뉴 ======
+# Menu URLs are intentionally written WITHOUT a leading slash.
+# Hugo's `relURL` only prepends the site's base path (e.g. /cv/ on
+# GitHub Pages) when the input does NOT start with "/". A leading
+# slash makes Hugo treat the value as already site-root-relative
+# and pass it through unchanged, which 404s under a subpath deploy.
 [[params.menu]]
 name = "home"
-url = "/"
+url = ""
 
 [[params.menu]]
 name = "Projects"
-url = "/projects/"
+url = "projects/"
 
-# — 상단 메뉴(각 섹션으로 이동) —
 [[params.menu]]
 name = "Publications"
-url = "/publications/"
+url = "publications/"
 
 
 # (있으면 좋음) 코드 하이라이트
