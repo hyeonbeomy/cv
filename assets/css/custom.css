@@ -1,4 +1,19 @@
-/* Place custom css here */
+/* ============================================================
+   Accent color system
+   ------------------------------------------------------------
+   --accent-primary : gold/yellow — titles, kickers, role chips
+   --accent-author  : teal — author self-reference (<strong> in
+                      publication entries), secondary highlight
+   The legacy class `.teal-highlight` is the YELLOW title accent
+   (name kept for markdown back-compat).
+   ============================================================ */
+:root {
+  --accent-primary: var(--accent-primary);
+  --accent-primary-soft: rgba(255, 204, 2, 0.08);
+  --accent-primary-edge: rgba(255, 204, 2, 0.28);
+  --accent-author: #0ea5a4;
+}
+
 .note-box {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -21,13 +36,13 @@
 }
 
 strong, b, .highlight, mark {
-  color: #0ea5a4 !important; /* 원하는 색으로 변경 */
+  color: var(--accent-author) !important;
   background: transparent;
 }
 
 .teal-highlight {
-  color: #ffcc02;           /* 옥색 텍스트 */
-  background: transparent; /* 연한 배경(선택) */
+  color: var(--accent-primary);
+  background: transparent;
   padding: 0.08em 0.18em;
   border-radius: 0.22em;
   text-decoration: none;
@@ -84,7 +99,7 @@ strong, b, .highlight, mark {
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #ffcc02;
+  color: var(--accent-primary);
 }
 
 .content-col h2 {
@@ -150,7 +165,7 @@ strong, b, .highlight, mark {
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #ffcc02;
+  color: var(--accent-primary);
 }
 
 .news-box h3 {
@@ -180,7 +195,7 @@ strong, b, .highlight, mark {
   font-size: 0.76rem;
   font-family: var(--font-mono);
   letter-spacing: 0.04em;
-  color: #ffcc02 !important;
+  color: var(--accent-primary) !important;
 }
 
 .news-box .news-content {
@@ -226,8 +241,8 @@ strong, b, .highlight, mark {
 }
 
 .news-box .news-toggle:hover {
-  border-color: #ffcc02;
-  color: #ffcc02;
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
 }
 
 @media (min-width: 1220px) {
@@ -238,8 +253,21 @@ strong, b, .highlight, mark {
     left: max(0.75rem, calc((100vw - var(--main-width)) / 2 - var(--news-width) - 0.9rem));
     width: var(--news-width);
     max-width: var(--news-width);
+    /* Cap height to viewport so a long news list scrolls inside the
+       box instead of spilling past the footer. */
+    max-height: calc(100vh - var(--header-top-gap) - 8rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     margin-top: 0;
     z-index: 3;
+  }
+
+  .news-box::-webkit-scrollbar {
+    width: 6px;
+  }
+  .news-box::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
   }
 }
 
@@ -327,6 +355,31 @@ strong, b, .highlight, mark {
   opacity: 0.42;
   transform: scale(1.03);
   filter: brightness(1.03) saturate(0.98) contrast(1.04);
+  transition: opacity 0.32s ease, filter 0.32s ease, transform 0.4s ease;
+}
+
+.project-card.with-media:hover .project-figure img {
+  opacity: 0.7;
+  filter: brightness(1.08) saturate(1.05) contrast(1.02);
+  transform: scale(1.05);
+}
+
+.project-card.with-media::after {
+  transition: background 0.32s ease;
+}
+
+.project-card.with-media:hover::after {
+  background:
+    linear-gradient(120deg, rgba(7, 7, 7, 0.7) 0%, rgba(10, 10, 10, 0.55) 42%, rgba(10, 10, 10, 0.4) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.32) 100%);
+}
+
+@media (hover: none) {
+  .project-card.with-media:hover .project-figure img {
+    opacity: 0.42;
+    filter: brightness(1.03) saturate(0.98) contrast(1.04);
+    transform: scale(1.03);
+  }
 }
 
 .project-card h2 {
@@ -353,10 +406,10 @@ strong, b, .highlight, mark {
   margin-top: 0.15rem;
   margin-bottom: 0.5rem;
   padding: 0.22rem 0.6rem;
-  border: 1px solid rgba(255, 204, 2, 0.28);
+  border: 1px solid var(--accent-primary-edge);
   border-radius: 999px;
-  color: #ffcc02;
-  background: rgba(255, 204, 2, 0.08);
+  color: var(--accent-primary);
+  background: var(--accent-primary-soft);
   font-size: 0.78rem;
   font-family: var(--font-mono);
 }
@@ -408,12 +461,283 @@ strong, b, .highlight, mark {
 }
 
 .project-links a:hover {
-  border-color: #ffcc02;
-  color: #ffcc02;
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
 }
 
 @media (max-width: 720px) {
   .project-card.with-media {
     min-height: 16rem;
   }
+}
+
+/* ============================================================
+   Home page — section blocks below the profile card
+   ============================================================ */
+.home-section {
+  margin-top: 2.25rem;
+}
+
+.home-section > h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--code-border);
+  font-size: 1.25rem;
+  letter-spacing: 0.01em;
+}
+
+.home-section > h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.35rem;
+  height: 1.05em;
+  border-radius: 2px;
+  background: var(--accent-primary);
+}
+
+/* — Timeline (Education, Experience) — */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.timeline > li.timeline-item {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 1.1rem;
+  margin-left: 0;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--code-border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.timeline-period {
+  color: var(--accent-primary);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.timeline-body h3 {
+  margin: 0 0 0.18rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.timeline-body p {
+  margin: 0;
+  color: var(--content-secondary);
+  font-size: 0.9rem;
+}
+
+.timeline-body p + p {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 640px) {
+  .timeline > li.timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}
+
+/* — Interest tags — */
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.interest-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.32rem 0.75rem;
+  border: 1px solid var(--code-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--content-primary);
+  font-size: 0.86rem;
+  line-height: 1.3;
+}
+
+/* — Awards grid — */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.85rem;
+}
+
+.award-card {
+  position: relative;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--code-border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.award-card:hover {
+  border-color: var(--accent-primary-edge);
+  transform: translateY(-1px);
+}
+
+.award-year {
+  margin: 0 0 0.35rem;
+  color: var(--accent-primary);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.award-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.award-card h3 a {
+  color: var(--content-primary);
+  border-bottom: 1px dashed transparent;
+}
+
+.award-card h3 a:hover {
+  border-bottom-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.award-subject {
+  margin: 0;
+  color: var(--content-secondary);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* — Reviewer chips — */
+.reviewer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.reviewer-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.26rem 0.65rem;
+  border: 1px solid var(--code-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--content-primary);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.reviewer-chip em {
+  margin-left: 0.3rem;
+  color: var(--content-secondary);
+  font-style: normal;
+  font-size: 0.72rem;
+}
+
+/* — Contact compact row — */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--code-border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--content-primary);
+  font-size: 0.88rem;
+}
+
+.contact-chip:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+/* ============================================================
+   Publications — year-jump nav + venue & award badges
+   ============================================================ */
+.year-jump-nav {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1.5rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--code-border);
+  border-radius: 12px;
+  background: rgba(14, 14, 14, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.year-jump-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--content-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+.year-jump-nav a:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.venue {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.35rem;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--code-border);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--content-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+.badge-award {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.35rem;
+  padding: 0.08rem 0.45rem;
+  border: 1px solid var(--accent-primary-edge);
+  border-radius: 4px;
+  background: var(--accent-primary-soft);
+  color: var(--accent-primary);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }

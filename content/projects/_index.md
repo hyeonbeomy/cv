@@ -4,6 +4,11 @@ readTime: false
 description: "Selected research and development projects by HyeonBeom Yi"
 ---
 
+<!-- Image paths use `../images/foo.png` — relative to this page, which
+     renders at `/projects/` (or `/cv/projects/` on GitHub Pages).
+     `../images/` therefore resolves to the site-root `images/` folder
+     in both environments. -->
+
 <p class="projects-intro">
 Selected research and development projects across human augmentation, accessibility, museum interaction, XR, and experiential exhibition design.
 </p>
@@ -11,7 +16,7 @@ Selected research and development projects across human augmentation, accessibil
 <div class="projects-grid">
   <section class="project-card with-media">
     <figure class="project-figure">
-      <img src="../images/abp_abstract.webp" alt="Concept image for the extended artificial bodies project" loading="lazy">
+      <img src="../images/abp_abstract.webp" alt="Concept image for the extended artificial bodies project" loading="lazy" decoding="async">
     </figure>
     <div class="project-copy">
       <p class="project-meta">2026 - Present</p>
@@ -28,7 +33,7 @@ Selected research and development projects across human augmentation, accessibil
 
   <section class="project-card with-media">
     <figure class="project-figure">
-      <img src="../images/deaf_music.png" alt="Multisensory music accessibility system for deaf and hard-of-hearing people" loading="lazy">
+      <img src="../images/deaf_music.png" alt="Multisensory music accessibility system for deaf and hard-of-hearing people" loading="lazy" decoding="async">
     </figure>
     <div class="project-copy">
       <p class="project-meta">2024 - 2025</p>
@@ -47,7 +52,7 @@ Selected research and development projects across human augmentation, accessibil
 
   <section class="project-card with-media">
     <figure class="project-figure">
-      <img src="../images/wonderscope_representative.jpeg" alt="Representative image of the WonderScope museum interaction project" loading="lazy">
+      <img src="../images/wonderscope_representative.jpeg" alt="Representative image of the WonderScope museum interaction project" loading="lazy" decoding="async">
     </figure>
     <div class="project-copy">
       <p class="project-meta">2018 - 2022</p>
@@ -69,7 +74,7 @@ Selected research and development projects across human augmentation, accessibil
 
   <section class="project-card with-media">
     <figure class="project-figure">
-      <img src="../images/fire_fighting.png" alt="Concept interface for VR fire-fighting training" loading="lazy">
+      <img src="../images/fire_fighting.png" alt="Concept interface for VR fire-fighting training" loading="lazy" decoding="async">
     </figure>
     <div class="project-copy">
       <p class="project-meta">2019</p>
