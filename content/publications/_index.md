@@ -18,7 +18,7 @@ description: "HyeonBeom Yi — Publications"
 
 ## 2026
 
-- <span class="venue">DIS '26</span> Sungyong Shin\*, **HyeonBeom Yi\***, Dasom Choi, Yoonji Lee, Chi Yoon Jeong, Changhee Lee, and Woohun Lee. <span class="teal-highlight">Co-designing Haptics for Deaf and Hard-of-Hearing Music Education with a Reconfigurable Prototyping System.</span> (Accepted, \*Both authors equally contributed)
+- <span class="venue">DIS '26</span> [Sungyong Shin\*, **HyeonBeom Yi\***, Dasom Choi, Yoonji Lee, Chi Yoon Jeong, Changhee Lee, and Woohun Lee. <span class="teal-highlight">Co-designing Haptics for Deaf and Hard-of-Hearing Music Education with a Reconfigurable Prototyping System.</span>](https://dl.acm.org/doi/10.1145/3800645.3813055) (Accepted, \*Both authors equally contributed)
 
 - <span class="venue">CHI EA '26</span> [**HyeonBeom Yi**, Myung Jin (MJ) Kim, Seungwoo Je, Seungjae Oh, Shuto Takashita, Hongyu Zhou, Marie Muehlhaus, Eyal Ofek, and Andrea Bianchi. <span class="teal-highlight">Augmented Body Parts: Bridging VR Embodiment and Wearable Robotics.</span>](https://dl.acm.org/doi/10.1145/3772363.3778688) [Workshop Homepage](https://sites.google.com/view/augmented-body-parts/)
 
