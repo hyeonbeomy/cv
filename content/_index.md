@@ -140,6 +140,8 @@
 ## 🧪 Reviewer
 
 <div class="reviewer-list">
+  <span class="reviewer-chip">SIGGRAPH Asia 2026 ET</span>
+  <span class="reviewer-chip">DIS 2026 Student Design Competition</span>
   <span class="reviewer-chip">SIGGRAPH Asia 2025 ET</span>
   <span class="reviewer-chip">DIS 2025</span>
   <span class="reviewer-chip">CHI 2025 <em>Design</em></span>
