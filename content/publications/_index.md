@@ -17,6 +17,8 @@ description: "HyeonBeom Yi — Publications"
 </nav>
 
 ## 2026
+- <span class="venue">UIST '26 Poster</span> **HyeonBeom Yi**, Han Shi, Seungwoo Je, Chang Hee Lee, Myung Jin (MJ) Kim, Chi Yoon Jeong, Sungyong Shin. <span class="teal-highlight">Tactile Voice Timbre: Haptic Speaker Signatures for Captioned Multi-Speaker Video.</span> (Accepted)
+
 - <span class="venue">UIST '26</span> Han Shi, Hanzhong Luo, Xuesong Zhang, Quanyuan Zou, **HyeonBeom Yi**, Seungwoo Je. <span class="teal-highlight">ExtenString: Enhancing String-Based Interaction with Virtual Screens through Remapping</span> (Accepted)
 
 - <span class="venue">DIS '26</span> [Sungyong Shin\*, **HyeonBeom Yi\***, Dasom Choi, Yoonji Lee, Chi Yoon Jeong, Changhee Lee, and Woohun Lee. <span class="teal-highlight">Co-designing Haptics for Deaf and Hard-of-Hearing Music Education with a Reconfigurable Prototyping System.</span>](https://dl.acm.org/doi/10.1145/3800645.3813055) (*Both authors equally contributed)
