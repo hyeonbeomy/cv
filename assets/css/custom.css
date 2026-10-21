@@ -271,9 +271,11 @@ strong, b, .highlight, mark {
   }
 }
 
+/* Narrow screens (phones, split views, small laptops): hide the news
+   box entirely — it only works as a fixed sidebar on wide layouts. */
 @media (max-width: 1219px) {
   .news-box {
-    position: static;
+    display: none;
   }
 }
 
