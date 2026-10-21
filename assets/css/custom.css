@@ -289,6 +289,17 @@ strong, b, .highlight, mark {
     max-width: 180px;
     margin: 0 auto;
   }
+
+  /* Phone: drop the profile card chrome — the gradient card wrapping the
+     note box reads as box-in-box when everything is narrow. Content sits
+     directly on the page instead. */
+  .profile-card {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+  }
 }
 
 /* Projects page */
