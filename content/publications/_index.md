@@ -17,6 +17,8 @@ description: "HyeonBeom Yi — Publications"
 </nav>
 
 ## 2026
+- <span class="venue">VRST '26 Poster</span> [Myung Jin (MJ) Kim, Mooseop Kim, **HyeonBeom Yi**, and Chi Yoon Jeong. <span class="teal-highlight">Finding the Way Through: A Walkable VR Testbed for Nonvisual Obstacle Negotiation.</span>](https://dl.acm.org/doi/10.1145/3822517.3849923)
+
 - <span class="venue">UIST '26 Poster</span> [**HyeonBeom Yi**, Han Shi, Seungwoo Je, Chang Hee Lee, Myung Jin (MJ) Kim, Chi Yoon Jeong, Sungyong Shin. <span class="teal-highlight">Tactile Voice Timbre: Haptic Speaker Signatures for Captioned Multi-Speaker Video.</span>](https://dl.acm.org/doi/10.1145/3830397.3841810)
 
 - <span class="venue">UIST '26</span> [Han Shi, Hanzhong Luo, Xuesong Zhang, Quanyuan Zou, **HyeonBeom Yi**, Seungwoo Je. <span class="teal-highlight">ExtenString: Enhancing String-Based Interaction with Virtual Screens through Remapping.</span>](https://dl.acm.org/doi/10.1145/3830398.3830480)
